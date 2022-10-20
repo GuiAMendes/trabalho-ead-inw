@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Professores e Disciplinas </title>
+    <link rel="shortcut icon" href="imagens/online-course.png" type="image/x-icon">
+    <style>
+        body { 
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+            background-image: linear-gradient(#90e0ef,#00b4d8,#0077b6);
+            font-size: large;
+        }
+        header {
+            border: solid #ffffff;
+            width: 700px;
+        }
+        nav {
+            font-size: medium;
+            max-width: 400px;
+            margin: 0.5cm;
+            border: 1px solid rgb(32, 27, 44) ;
+            border-radius: 3%;
+            background-color: #ffffff;
+            text-align: left;
+            padding: 10px 40px 20px 10px;
+        }
+        .nav {
+            background-color: hsl(201,100,36);
+        }
+        fieldset {
+            overflow-x: auto;
+            width: 40%;
+            background-color: #ffffff;
+            border-radius: 20px;
+            margin: 1cm;
+        }
+        table {
+            margin: auto;
+            max-width: 700px;
+            background-color: #ffffff;
+        }
+        td { 
+            border: 1px solid hsla(0, 0%, 0%, 1);
+            border-collapse:collapse;
+            padding: 8px;
+            text-align: center;
+        }
+        .Cor_dias {
+            background-color: rgba(0,180,216,1);
+        }
+        .Cor_inf {
+            background-color: rgba(0,180,216,1);
+        }
+        .Cor_horario {
+            background-color: #90e0ef;
+        }
+        footer {
+            width: auto;
+            background-color: rgb(32, 27, 44) ;
+            text-align: center;
+            border-radius: 10px;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+ 
+
+    <nav> 
+    <table> 
+        <tr>
+            <ul style="list-style-type: none;" > 
+                <li> <a  href="index.html"> <img width="50px" src="imagens/casa-simples-fina.png" alt="A imagem apresenta um pequeno icone com a ilustração de casa.">  Página inicial  </a></li> <br>
+                <li> <a href="Professor.html" ><img width="50px" src="imagens/male.png" alt="A imagem apresenta um pequeno icone com a ilustração de um professor apontando com um bastão para lousa."> Professores </a></li><br>
+                <li> <a href="Disciplinas.html"> <img width="50px" src="imagens/livro.png" alt="A imagem apresenta um pequeno icone com a ilustração de três livros empilhados. "> Disciplinas  </a></li><br>
+                <li> <a href="Relatorio.html"> <img width="50px" src="imagens/relatorio-de-negocios.png" alt="A imagem apresenta um pequeno icone com a ilustração de um formulário com gráficos em uma folha de papel."> Relatórios  </a> </li>
+            </ul>
+            </ul>
+        </tr>
+    </table>
+    </nav>
+
+    <main>
+        <table>
+            <tr>
+                <td> <fieldset>
+                    <h1> Busque aqui seu Professor ou Disciplina: </h1>   
+                    <label for="iRF" class="Cor_inf"> RF Professor: </label><br><br>
+                    <input type="text" id="iRF" name="iRF" value="" placeholder="Ex: Florestan Fernandes."><br><br>
+                
+                    <label for="iarea" class="Cor_inf"> Área de Pesquisa: </label><br><br>
+                        <select  id="iarea" value="">
+                            <option value="------------">------------</option>
+                            <option value="C++"> C++</option>
+                            <option value="Html CSS ">Html CSS </option>
+                            <option value="Java"> Java</option>
+                            <option value="Javascript"> Javascript</option>
+                            <option value="Python"> Python </option>
+                        </select><br><br>
+                   
+                    <label for="isano" class="Cor_inf"> Ano: </label><br><br>
+                        <select id="isano" value="">
+                            <option value="------------">------------</option>
+                            <option value="2022"> 2022 </option>
+                            <option value="2021"> 2021 </option>
+                            <option value="2020"> 2020 </option>
+                            <option value="2019"> 2019 </option>
+                            <option value="2018"> 2018 </option>
+                            <option value="2017"> 2017 </option>
+                            <option value="2016"> 2016 </option>
+                            <option value="2015"> 2015 </option>
+                            <option value="2014"> 2014 </option>
+                            <option value="2013"> 2013 </option>
+                            <option value="2012"> 2012 </option>
+                        </select><br><br>
+                    
+                    <label for="isem" class="Cor_inf"> Semestre: </label><br><br>
+                        <select id="isem" value="">
+                            <option value="------------">------------</option>
+                            <option value="1sem"> 1º Semestre </option>
+                            <option value="2sem"> 2º Semestre </option>
+                            <option value="3sem"> 3º Semestre</option>
+                            <option value="4sem"> 4º Semestre</option>
+                        </select><br><br>
+                
+                    <label for="isdia" class="Cor_inf"> Dia da semana: </label><br><br>
+                        <select id="dia" value="">
+                            <option value="------------">------------</option>
+                            <option value="segunda"> Segunda </option>
+                            <option value="terça"> Terça </option>
+                            <option value="quarta"> Quarta </option>
+                            <option value="quinta"> Quinta </option>
+                            <option value="sexta"> Sexta </option>
+                        </select><br><br>
+                
+                <label for="ishora" class="Cor_inf"> Horário: </label><br><br>
+                        <select id="ishora" value="">
+                            <option value="------------">------------</option>
+                            <option value="hor1"> 07:00 </option>
+                            <option value="hor2"> 07:45 </option>
+                            <option value="hor3"> 08:30 </option>
+                            <option value="hor4"> 09:15 </option>
+                            <option value="hor5"> 10:00 </option>
+                            <option value="hor6"> 10:45 </option>
+                            <option value="hor7"> 11:30 </option>
+                            <option value="hor8"> 12:15 </option>
+                        </select><br><br>
+                
+                                   <a href="Relatório .html"><input type="button" value="Entrar"></a>
+                        <input type="reset" value="Excluir">
+                
+                       </fieldset></td>
+                <td> <fieldset>
+                    <table>
+                    <header>
+                            <tr>
+                                <td colspan="5" class="nav">  <h1> Grade curricular </h1></td>
+                                <td class="nav"> <h2> 2022 </h2></td>
+                            </tr>
+                    </header>
+                    
+                        <section>
+                            <tr class="Cor_dias">
+                                <td> Horários</td>
+                                <td> Segunda feira </td>
+                                <td> Terça feira </td>
+                                <td> Quarta feira </td>
+                                <td> Quinta feira </td>
+                                <td> Sexta feira</td>
+                            </tr>
+                        </section>
+                
+                        <section>
+                            <tr>
+                                <td class="Cor_horario"> 07:00 </td>
+                                <td> Py </td>
+                                <td> Py</td>
+                                <td> J </td>
+                                <td> J </td>
+                                <td> Html CSS</td>
+                            </tr>
+                        </section>
+                
+                        <section>
+                            <tr>
+                                <td class="Cor_horario"> 07:45 </td>
+                                <td> -------</td>
+                                <td> C++ </td>
+                                <td> C++</td>
+                                <td> Html CSS</td>
+                                <td> Html CSS</td>
+                            </tr>    
+                        </section>
+                        
+                        <section>
+                            <tr>
+                                <td class="Cor_horario"> 08:30 </td>
+                                <td> -------</td>
+                                <td> Html CSS</td>
+                                <td>  Js</td>
+                                <td>  Py</td>
+                                <td> Py</td>
+                            </tr>
+                        </section>
+                        
+                        <section>
+                            <tr>
+                                <td class="Cor_horario"> 09:15 </td>
+                                <td>  Html CSS</td>
+                                <td> C++</td>
+                                <td>  -------</td>
+                                <td> Py</td>
+                                <td>  Js</td>
+                            </tr>
+                        </section>
+                        
+                        <section>
+                            <tr>
+                                <td class="Cor_horario"> 10:00 </td>
+                                <td>  Jav </td>
+                                <td> Py</td>
+                                <td>  Js</td>
+                                <td> C++</td>
+                                <td>  Js</td>
+                            </tr>
+                        </section>
+                        
+                        <section>
+                            <tr>
+                                <td class="Cor_horario"> 10:45 </td>
+                                <td>  Js</td>
+                                <td> J </td>
+                                <td> C++</td>
+                                <td> Py</td>
+                                <td> J </td>
+                            </tr>
+                        </section>
+                        
+                        <section>
+                            <tr>
+                                <td class="Cor_horario"> 11:30 </td>
+                                <td> Js</td>
+                                <td> J </td>
+                                <td> -------</td>
+                                <td> Html CSS</td>
+                                <td> C++</td>
+                            </tr>    
+                        </section>
+                        
+                        <section>
+                            <tr>
+                                <td class="Cor_horario"> 12:15 </td>
+                                <td>  Html CSS</td>
+                                <td> C++</td>
+                                <td>  Py</td>
+                                <td>   Py </td>
+                                <td> ------- </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" style="background-color: rgb(32, 27, 44) ;"> </td><br>
+                            </tr>
+                        </section>
+                        
+                            <table>
+                                <tr class="Cor_inf"> 
+                                    <td> <h2> Professores</h2> </td>
+                                    <td > <h2> ID </h2>  </td>
+                                    <td > <h2> Sigla-Disciplinas </h2> </td>
+                                </tr>
+                        
+                                <tr> 
+                                    <td> Rodrigo </td>
+                                    <td>#543 </td>
+                                    <td> Py (Python)</td>
+                                </tr>
+                        
+                                <tr>
+                                    <td> Thales </td>
+                                    <td> #687 </td>
+                                    <td> JS (Javascript)</td>
+                                    
+                                </tr>
+                        
+                                <tr> 
+                                    <td> Amelie </td>
+                                    <td> #163 </td>
+                                    <td> C++</td>
+                                </tr>
+                        
+                                <tr>
+                                    <td> Lily</td>
+                                    <td>  #609</td>
+                                    <td> Html CSS </td>
+                                </tr>
+                        
+                                <tr>
+                                    <td> Pietro </td>
+                                    <td> #234 </td>
+                                    <td> J (Java)</td>
+                                    </tr>
+                        
+                                <tr>
+                                    <td colspan="4" style="background-color: rgb(32, 27, 44) ;"></td>
+                                </tr>
+                            </table></td>
+            </tr>
+        </table>
+    </main>
+    
+
+    
+            <footer>
+                <h2> All rights to this page and its interior content are reserved by Coder Teach &reg;. </h2>
+                <h2> <a href=""> Termos de uso </a> </h2>
+            </footer>
+</body>
+</html>

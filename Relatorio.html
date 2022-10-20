@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Professores e Disciplinas </title>
+    <link rel="shortcut icon" href="imagens/online-course.png" type="image/x-icon">
+    <style>
+        body { 
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+            background-image: linear-gradient(#90e0ef,#00b4d8,#0077b6);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            font-size: large;
+            margin-left: 1cm;
+        }
+        nav {
+            font-size: medium;
+            max-width: 400px;
+            margin: 0.5cm;
+            border: 1px solid rgb(32, 27, 44)  ;
+            border-radius: 3%;
+            background-color: #ffffff;
+            text-align: left;
+            padding: 10px 40px 20px 10px;
+        }
+        table {
+            margin: auto;
+            width: 300px;
+            background-color: #ffffff;
+            border-radius: 10px;
+             }
+        td { 
+            border: 2px solid hsla(0, 0%, 0%, 1);;
+            border-collapse:collapse;
+            padding: 8px;
+            text-align: center;
+        }
+        fieldset {
+            max-width: 40%;
+            border-radius: 10px;
+            background-color: #ffffff;
+            overflow-x: auto;
+        }
+        .Cor_inf {
+            background-color: rgba(0,180,216,1);
+        }
+        .Cor_prof{
+            background-color: #90e0ef;
+        }
+        footer {
+            max-width: 83.5%;
+            background-color: rgb(32, 27, 44) ;
+            text-align: center;
+            border-radius: 10px;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    
+        <nav>
+            <table> 
+                <tr>
+                    <ul style="list-style-type: none;" >    
+                        <li> <a  href="index.html"> <img width="50px" src="imagens/casa-simples-fina.png" alt="A imagem apresenta um pequeno icone com a ilustração de casa.">  Página inicial  </a></li> <br>
+                        <li> <a href="Professor.html" ><img width="50px" src="imagens/male.png" alt="A imagem apresenta um pequeno icone com a ilustração de um professor apontando com um bastão para lousa."> Professores </a></li><br>
+                        <li> <a href="Disciplinas.html"> <img width="50px" src="imagens/livro.png" alt="A imagem apresenta um pequeno icone com a ilustração de três livros empilhados. "> Disciplinas  </a></li><br>
+                        <li> <a href="Professores e Disciplinas .html" > <img width="50px" src="imagens/aula-online.png" alt="A imagem apresenta um pequeno icone com a ilustração de um monitor com um pequeno video de um professor apontando com um bastão para lousa. "> Professores-Disciplinas </a></li><br>
+                        <li> <a href="https://www.google.com.br/"> <img width="50px" src="imagens/cross.png" alt="A imagem apresenta um pequeno icone de um circulo com o desenho de um X em seu interior."> Sair </a></li>
+                    </ul>
+                </tr>
+            </table>
+        </nav>
+
+    <fieldset>
+        <div>
+            <table>
+                <tr class="Cor_inf"> 
+                    <td> <h2> Professores</h2> </td>
+                    <td > <h2> #ID </h2>  </td>
+                    <td > <h2> Disciplina </h2> </td>
+                    <td colspan="5"> <h2> Horários </h2></td>
+                </tr>
+        
+                <tr> 
+                    <td class="Cor_prof"> Rodrigo </td>
+                    <td> #543 </td>
+                    <td> Python </td>
+                    <td> Segunda 07:00 </td>
+                    <td> Terça 07:00/10:00 </td>
+                    <td> Quarta 12:15 </td>
+                    <td> Quinta 08:30/09:15/10:45/12:15 </td>
+                    <td> Sexta 08:30 </td>
+                </tr>
+        
+                <tr>
+                    <td class="Cor_prof"> Thales </td>
+                    <td> #687 </td>
+                    <td> Javascript </td>
+                    <td> Segunda 10:45/11:30 </td>
+                    <td> Terça ---  </td>
+                    <td> Quarta 08:30/10:00 </td> 
+                    <td> Quinta --- </td>
+                    <td> Sexta 09:15/10:00 </td>                   
+                </tr>
+        
+                <tr> 
+                    <td class="Cor_prof"> Amelie </td>
+                    <td> #163 </td>
+                    <td> C++ </td>
+                    <td> Segunda --- </td>
+                    <td> Terça 07:45/09:15/12:15 </td>
+                    <td> Quarta 07:45/10:45 </td> 
+                    <td> Quinta 10:00 </td>
+                    <td> Sexta 11:30 </td>
+                </tr>
+        
+                <tr>
+                    <td class="Cor_prof"> Lily </td>
+                    <td> #609 </td>
+                    <td> Html CSS </td>
+                    <td> Segunda 09:15/12:15 </td>
+                    <td> Terça 08:30 </td>
+                    <td> Quarta --- </td> 
+                    <td> Quinta 07:45/11:30 </td>
+                    <td> Sexta 07:00/07:45 </td>
+                </tr>
+        
+                <tr>
+                    <td class="Cor_prof"> Pietro </td>
+                    <td> #234 </td>
+                    <td> Java </td>
+                    <td> Segunda 10:00 </td>
+                    <td> Terça 10:45/11:30 </td>
+                    <td> Quarta 07:00 </td> 
+                    <td> Quinta --- </td>
+                    <td> Sexta 10:45 </td>
+                    </tr>
+            </table>
+        </div>
+</fieldset>
+
+<footer>
+    <h2> All rights to this page and its interior content are reserved by Coder Teach &reg;. </h2>
+    <h2> <a href=""> Termos de uso </a> </h2>
+</footer>
+</body>
+</html>
